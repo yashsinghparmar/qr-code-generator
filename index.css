@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items:center ;
+	min-height: 100vh;
+}
+
+.wrapper{
+	background: #3498db;
+	max-width: 410px;
+	height: 450px;
+	border-radius: 5px;
+	padding: 16px 25px;
+}
+
+.textalign{
+	text-align: center;
+}
+span{
+	color: orange;
+}
+header h1{
+	font-size: 2rem;
+	font-weight: 600;
+	color: white;
+}
+header p{
+	margin-top: 10px;
+	color: white;
+	font-size: 1rem;
+}
+
+.wrapper .form {
+	margin: 30px 0px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.form input{
+	font-size:1rem;
+	padding: 5px;
+	border: 1px solid #999;
+	width:95% ;
+	height:40px;
+	outline: none;
+	border-radius: 5px;
+}
+.form button{
+	margin-top: 20px;
+	background: orange;
+	color: white;
+	cursor: pointer;
+	width:60% ;
+	height:40px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight:400;
+}
+
+.wrapper .qr-code{
+	display: flex;
+	padding: 10px 0;
+	border-radius: 5px;
+	pointer-events: none;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	border: 1px solid #ccc; 
+	height: 190px;
+
+}
+
+.qr-code img{
+	height: 95%;
+	width: 95%;
+}
+
+.wrapper.active .qr-code{
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity all .5s .05s ease;
+}
+
+@media screen  and (max-width:355px){
+	.wrapper{
+		height: 100%;
+		width: 100%;
+	}
+	header h1{
+		font-size:1.8rem;
+	}
+	header p{
+		font-size:.9rem;
+	}
+	.form button{
+		width: 70%;
+		height: 50px;
+	}
+	.wrapper .qr-code{
+		height: 100%;
+	}
+}
+
+@media screen  and (max-width:570px){
+	.wrapper{
+		height: 100%;
+		width: 100%;
+	}
+	header h1{
+		font-size:2rem;
+	}
+	header p{
+		font-size:1rem;
+	}
+	.form button{
+		width: 70%;
+		height: 50px;
+	}
+	.wrapper .qr-code{
+		height: 100%;
+	}
+}
+
+
+@media screen  and (max-width:870px){
+	.wrapper{
+		height: 100%;
+		width: 100%;
+	}
+	header h1{
+		font-size:2rem;
+	}
+	header p{
+		font-size:1rem;
+	}
+	.form button{
+		width: 70%;
+		height: 50px;
+	}
+	.wrapper .qr-code{
+		height: 100%;
+	}
+}
+
+@media screen  and (max-width:1250px){
+	.wrapper{
+		height: 100%;
+		width: 100%;
+	}
+	header h1{
+		font-size:2rem;
+	}
+	header p{
+		font-size:1rem;
+	}
+	.form button{
+		width: 70%;
+		height: 50px;
+	}
+	.wrapper .qr-code{
+		height: 100%;
+	}
+}
